@@ -1,6 +1,6 @@
 import os
 import gc
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from langchain_core.messages import AIMessage,HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -12,7 +12,7 @@ import streamlit as st
 
 #os.environ.pop("HTTPS_PROXY", None)
 
-load_dotenv()
+#load_dotenv()
 
 model=AutoModelForCausalLM.from_pretrained("mlfoundations-dev/oh-dcft-v3.1-gpt-4o-mini")
 toeknizer=AutoTokenizer.from_pretrained("mlfoundations-dev/oh-dcft-v3.1-gpt-4o-mini")
